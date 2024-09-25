@@ -1,7 +1,7 @@
 // go to blog page
 document.getElementById("btn_blog")
     .addEventListener("click", function () {
-        window.location.href = "/blog.html";
+        window.location.href = "./blog.html";
     });
 
 // get id | set event listener |
