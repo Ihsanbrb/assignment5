@@ -29,11 +29,23 @@ function donateHistory(amount, donateName) {
     historyList.appendChild(listItem);
 }
 
-function showSectionByID(id) {
+function showSectionByID(sectionID, buttonID) {
     // hide all section
     document.getElementById("donate_section").classList.add("hidden");
     document.getElementById("history_section").classList.add("hidden");
 
     // show clicked section
-    document.getElementById(id).classList.remove("hidden");
+    document.getElementById(sectionID).classList.remove("hidden");
+
+    // reset button style
+    const donationBtn = document.getElementById("donation");
+    const historyBtn = document.getElementById("history");
+
+    // remove active class 
+    donationBtn.classList.remove("bg-btnbg");
+    historyBtn.classList.remove("bg-btnbg");
+
+    // add active class
+    document.getElementById(buttonID).classList.add("bg-btnbg");
+
 }
