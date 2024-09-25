@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Assignment-5</title>
+    <!-- google font embated -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- daisyui and tailwind cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font code -->
+    <style>
+        .lexend-font {
+            font-family: "Lexend", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+        }
+    </style>
+    <!-- tailwind config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        btnbg: '#b4f461',
+                        menubg: '#f9f7f3',
+                    }
+                }
+            }
+        }
+    </script>
+
+</head>
+
+<body class="lexend-font">
+    <!-- header setion -->
+    <header class="bg-menubg pb-4 sticky top-0 z-10">
+        <section class="container mx-auto">
+            <div class="navbar">
+                <div class="navbar-start">
+                    <a id="btn_home" class="btn bg-btnbg text-lg font-bold" href="/index.html">Home</a>
+                </div>
+                <div class="navbar-center">
+                    <img src="./assets/logo.png" alt="">
+                    <h1 class="btn btn-ghost text-3xl font-bold hidden md:block">Donate Bangladesh</h1>
+                </div>
+                <div class="navbar-end gap-2">
+                    <img src="./assets/coin.png" alt="">
+                    <h2 class="text-lg font-bold"><span id="balance">5500</span> BDT</h2>
+                </div>
+            </div>
+        </section>
+    </header>
+    <!-- main section -->
+    <main class="container mx-auto p-4">
+        <h1 class="text-3xl font-bold p-4">Important FAQ</h1>
+        <div tabindex="0" class="collapse collapse-plus border-base-300 bg-base-200 border">
+            <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+            <div class="collapse-content">
+                <p>The Document Object Model (DOM) is an interface that represents HTML or XML documents as a tree
+                    structure, allowing
+                    scripts to manipulate content and structure dynamically.</p>
+            </div>
+        </div>
+        <div tabindex="0" class="collapse collapse-plus border-base-300 bg-base-200 border">
+            <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+            <div class="collapse-content">
+                <p>The Document Object Model (DOM) allows you to interact with HTML and XML documents in a structured
+                    way. You can select
+                    elements using methods like getElementById(), getElementsByClassName(), getElementsByTagName(),
+                    querySelector(), and
+                    querySelectorAll(). These methods let you access and manipulate specific elements within the
+                    document.</p>
+            </div>
+        </div>
+        <div tabindex="0" class="collapse collapse-plus border-base-300 bg-base-200 border">
+            <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why
+                is it useful?</div>
+            <div class="collapse-content">
+                <p>Event delegation involves attaching a single event listener to a parent element to manage events from
+                    child elements.
+                    This improves performance, reduces code complexity, and allows handling of dynamically added
+                    elements.</p>
+            </div>
+        </div>
+        <div tabindex="0" class="collapse collapse-plus border-base-300 bg-base-200 border">
+            <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles
+                using the DOM?</div>
+            <div class="collapse-content">
+                <p>You can manipulate an element's attributes and styles using the DOM by accessing the element through
+                    methods like
+                    getElementById or querySelector. To change an attribute, use element.setAttribute('attributeName',
+                    'value'). To modify
+                    styles, you can directly access the style property of the element, such as element.style.color =
+                    'red' to change the
+                    text color.</p>
+            </div>
+        </div>
+    </main>
+
+    <script src="./js/index.js"></script>
+    <script src="./js/utilities.js"></script>
+    <script src="./js/features.js"></script>
+</body>
+
+</html>
